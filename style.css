@@ -1,32 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 /* Loading Custom Font */
 
 body {
-	font-family:'Conv_Raleway-VariableFont_wght',Sans-Serif;
-	line-height: 1.4;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
 }
+/* Section */
 
-.navbar-brand {
-	padding: 0;
+.section {
+    position: relative;
+    padding: 100px 0;
 }
-
 /* Logo Positioning */
 
 .logo {
-	height: 3.9em;
-	position: absolute;
-	top: 0.2em;
+    height: 3.9em;
+    position: absolute;
+    top: 0.2em;
 }
-
 /* Navigation Styling */
-.nav-link {
-	position: relative;
-    display: inline-block;
-	font-weight: 700;
-	font-size: 13px;
-    text-transform: uppercase;
-	letter-spacing: 0.1em;
-}
 
+.navbar-brand {
+    padding: 0;
+}
+.nav-link {
+    position: relative;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
 .nav-link::after {
     content: "";
     background: #dc307c;
@@ -34,32 +42,165 @@ body {
     position: absolute;
     bottom: 0;
     transition: .25s all 0.025s;
-  }
-
-  .nav-link::after {
+}
+.nav-link::after {
     left: 100%;
     right: 0;
-  }
-
-  .nav-link:hover ~ .nav-link::after {
+}
+.nav-link:hover~.nav-link::after {
     left: 0;
     right: 100%;
-  }
-  
-  .nav-link:hover::after {
+}
+.nav-link:hover::after {
     left: 0;
     right: 0;
-	
-  }
-
+}
 .nav-item {
-	padding: 0px 21px;
+    padding: 0px 17px;
+}
+.bg-light {
+    --bs-bg-opacity: .80;
+    background-color: #ffffffad;
+}
+/* Welcome Section */
+
+.welcome {
+    background: #000 url(img/main-bg-2.jpg) center center no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    height: 90vh;
+}
+.jumbotron {
+    padding: 90px 0;
+}
+.jumbotron .type-headings {
+    font-size: 72px;
+    color: rgb(236, 236, 236);
+}
+.type-headings .normal {
+    font-weight: 400;
+}
+.type-headings .cursive {
+    font-weight: 500;
+    font-family: Bitter;
+    letter-spacing: 3px;
+}
+.jumbotron .subheading {
+    font-size: 24px;
+    color: #f3d1e0;
+}
+.side-link {
+    position: absolute;
+    top: 50%;
+    transform: rotate(-90deg);
+}
+.left {
+    left: 0;
+}
+.right {
+    right: 0;
+}
+/* About Section */
+
+.about {
+    background-color: transparent;
+}
+.about-heading {
+    font-size: 50px;
+    line-height: 1.1;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-family: Bitter;
+}
+.about-heading span {
+    display: block;
+}
+.about-para p {
+    padding-bottom: 10px;
+}
+.sosmed-icon {
+    padding: 10px 0;
+    display: block;
+}
+.sosmed-icon a .item {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0 14px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background-image: linear-gradient(45deg, #ee1c75, #f14d52);
+    border-radius: 50px;
+}
+.about-cv {
+    padding-top: 10px;
+}
+/*Services Section */
+
+.services {
+  padding-bottom: 0;
+}
+
+.custom-card {
+  display: flex;
+}
+.custom-card-body {
+  padding-left: 20px;
+}
+
+.box-icon {
+    display: block;
+}
+.box-icon .icon {
+    width: 60px;
+    height: 60px;
+    color: #222222;
+    background-color: #fff;
+    display: table;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.box-icon i {
+    font-size: 30px;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 
+
 /* Custom Media Query */
+
+@media (max-width: 768px) {
+    .nav-item {
+        text-align: center;
+    }
+    .jumbotron {
+        padding: 0;
+    }
+}
 @media (max-width: 576px) {
-	.nav-item {
-		text-align: center;
-	}
+    .nav-item {
+        text-align: center;
+    }
+    .about {
+        text-align: center;
+    }
+}
+@media (max-width: 425px) {
+    .side-link {
+        display: none;
+    }
+    .jumbotron {
+        text-align: center !important;
+    }
+    .jumbotron .type-headings {
+        font-size: 50px;
+    }
+    .jumbotron .subheading {
+        font-size: 20px;
+    }
+    .about-heading {
+        font-size: 40px;
+    }
 }
