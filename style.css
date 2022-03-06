@@ -1,65 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 /* Loading Custom Font */
 
 body {
-	font-family:'Conv_Raleway-VariableFont_wght',Sans-Serif;
-	line-height: 1.4;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-size: 16px;
 }
+/* Section */
 
-.navbar-brand {
-	padding: 0;
+.section {
+    position: relative;
+    padding: 10rem 0;
 }
-
 /* Logo Positioning */
 
 .logo {
-	height: 3.9em;
-	position: absolute;
-	top: 0.2em;
+    height: 4.8rem;
+    position: absolute;
+    top: 0.2rem;
 }
-
 /* Navigation Styling */
-.nav-link {
-	position: relative;
-    display: inline-block;
-	font-weight: 700;
-	font-size: 13px;
-    text-transform: uppercase;
-	letter-spacing: 0.1em;
-}
 
+.navbar-brand {
+    padding: 0;
+}
+.nav-link {
+    position: relative;
+    display: inline-block;
+    font-weight: 600;
+    font-size: .8rem;
+    letter-spacing: .1rem;
+    color: #f2f2f2 !important;
+}
 .nav-link::after {
     content: "";
     background: #dc307c;
-    height: 2px;
+    height: .2rem;
     position: absolute;
     bottom: 0;
     transition: .25s all 0.025s;
-  }
-
-  .nav-link::after {
+}
+.nav-link::after {
     left: 100%;
     right: 0;
-  }
-
-  .nav-link:hover ~ .nav-link::after {
+}
+.nav-link:hover~.nav-link::after {
     left: 0;
     right: 100%;
-  }
-  
-  .nav-link:hover::after {
+}
+.nav-link:hover::after {
     left: 0;
     right: 0;
-	
-  }
-
+}
 .nav-item {
-	padding: 0px 21px;
+    padding: 0px 1.1rem;
+}
+.bg-light {
+    opacity: .90;
+    background-image: linear-gradient(90deg,#dc307c, #33b7e2, #5e62b0) !important;
+}
+
+.stick-shadow {
+    box-shadow: 0 1px 10px rgb(34 34 34 / 60%);
+    border-bottom: 0;
+}
+/* Welcome Section */
+
+.welcome {
+    background: #000 url(img/main-bg-2.jpg) center center no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    height: 85vh;
+}
+.jumbotron {
+    padding: 5.6rem 0;
+}
+.jumbotron .type-headings {
+    font-size: 4.5rem;
+    color: rgb(236, 236, 236);
+}
+.type-headings .normal {
+    font-weight: 400;
+}
+.type-headings .cursive {
+    font-weight: 500;
+    font-family: Bitter;
+    letter-spacing: 0.1rem;
+}
+.jumbotron .subheading {
+    font-size: 1.5rem;
+    color: #f3d1e0;
+}
+.side-link {
+    position: absolute;
+    top: 50%;
+    transform: rotate(-90deg);
+}
+.left {
+    left: 0;
+}
+.right {
+    right: 0;
+}
+/* About Section */
+
+.about {
+    background-color: transparent;
+    height: 90vh;
+}
+.section-heading {
+    font-size: 3.1rem;
+    line-height: 1.1;
+    letter-spacing: 0.063rem;
+    font-weight: 500;
+    font-family: Bitter;
+}
+.section-heading span {
+    display: block;
+}
+.about-para p {
+    padding-bottom: 0.625rem;
+}
+.sosmed-icon {
+    padding: 1.25rem 0;
+    display: block;
+}
+.sosmed-icon a .item {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0 0.875rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    text-align: center;
+    background-image: linear-gradient(45deg, #ee1c75, #f14d52);
+    border-radius: 50px;
+}
+.about-cv {
+    padding-top: 0.625rem;
 }
 
 
-/* Custom Media Query */
-@media (max-width: 576px) {
-	.nav-item {
-		text-align: center;
-	}
+/* Services Section */
+
+.services {
+  padding-bottom: 0;
+}
+
+.custom-card {
+  display: flex;
+}
+.custom-card-body {
+  padding-left: 1.25rem;
+}
+
+.box-icon {
+    display: block;
+}
+.box-icon .icon {
+    width: 3.75rem;
+    height: 3.75rem;
+    color: #222222;
+    background-color: #fff;
+    display: table;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.box-icon i {
+    font-size: 1.875rem;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* Skills Section */
+.skill {
+    padding: 0;
+}
+
+.skill-padding {
+    padding: 7rem 0 0 0;
+}
+
+.skill-box {
+    padding-left: 2rem;
+}
+
+.skill-box p {
+    padding-bottom: 1rem;
+}
+
+.skill-box .progress {
+    height: 1.8rem;
+    border-radius: 0;
+}
+
+.skill-box-item {
+    padding-bottom: 1rem;
+}
+
+.progress-bar-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.progress-bar-box span {
+    font-size: 1rem;
+}
+
+.progress-bar-box h3 {
+    font-size: 1.3rem;
+}
+
+
+/* Work Section */
+.work {
+    padding: 6rem 0;
+}
+
+.work .card {
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+
+/* Blog Section */
+.blog {
+    padding: 8rem 0 6rem 0;
+}
+
+.blog-box {
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+
+.blog-body {
+    position: absolute;
+    top: 50%;
+    right: 6.875rem;
+    transform: translateY(-50%);
+    padding: 1.875rem;
+    width: 40%;
+}
+
+.blog-bg-1 {
+    background-color: #212529;
+    z-index: 100;
+}
+
+.blog-body .title {
+    text-transform: uppercase;
+}
+
+.blog-body .title a {
+    text-decoration: none;
+}
+
+.blog-box .meta {
+    font-size: 0.85rem;
+    padding: 0.625rem 0;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 1.25rem;
+}
+
+.blog-img img {
+    z-index: 10;
+}
+
+.blog-body:after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    display: block;
+    top: 30px;
+    left: -15px;
+    transform: rotate(45deg);
+    background-color: #212529;
+    z-index: 99;
+}
+
+.blog-box p:not(:last-child) {
+    padding-bottom: 1rem;
+}
+
+.blog-excerpt {
+    font-size: 0.9rem;
+}
+
+.read-more {
+    font-size: 1rem;
+    display: block;
+    text-decoration: none;
+    text-align: right;
+}
+
+/* Contact Us section */
+
+.contact {
+    background: url(img/contactus.jpg) center center no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+/* Footer Section */
+footer {
+    background-color: #000;
+}
+
+footer.section {
+    padding: 7rem 0 0 0;
+}
+
+.footer-logo {
+    max-width: 50%;
+}
+
+.footer-title {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.copyright {
+    margin-top: 3rem;
+    padding: 1.25rem 0;
+    color: #ffffff;
+    font-size: 0.875rem;
+    text-align: center;
+    border-top: 1px solid #1a1a1a;
 }

@@ -1,0 +1,93 @@
+/* Custom Media Query */
+
+@media (max-width: 768px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    .nav-item {
+        text-align: center;
+    }
+    .jumbotron {
+        padding: 0;
+    }
+
+    .about {
+        height: 100%;
+    }
+
+    .section-heading {
+        font-size: 1.875rem;
+    }
+}
+
+@media (max-width: 576px) {
+    
+    body {
+        font-size: 12px;
+    }
+
+    .nav-item {
+        text-align: center;
+    }
+
+    .about {
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 425px) {
+
+    body {
+        font-size: 10px;
+    }
+
+    .side-link {
+        display: none;
+    }
+
+    .jumbotron {
+        text-align: center !important;
+    }
+
+    .jumbotron .type-headings {
+        font-size: 50px;
+    }
+
+    .jumbotron .subheading {
+        font-size: 20px;
+    }
+
+    .about {
+        text-align: center;
+        height: 100%;
+        padding: 5rem 0;
+    }
+
+    .about-para p {
+        font-size: 1.1rem;
+    }
+
+    .services {
+        padding: 5rem 0;
+    }
+
+    .services .text-start {
+        text-align: center !important;
+    }
+
+    .section-heading {
+        font-size: 2.5rem;
+        padding-bottom: 2rem;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+    }
+
+    .card-text:last-child {
+        font-size: 1rem;
+    }
+}
