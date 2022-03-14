@@ -15,10 +15,58 @@
 
     .about {
         height: 100%;
+        text-align: center;
+        font-size: larger;
+    }
+
+    .custom-card-body .card-text {
+        font-size: 1rem;
+    }
+
+    .skill-box {
+        margin-bottom: 2rem;
+    }
+
+    .skill-box p {
+        font-size: 1rem;
     }
 
     .section-heading {
-        font-size: 1.875rem;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .blog {
+        text-align: center;
+    }
+
+    .blog-body {
+        position: static;
+        margin-top: 1rem;
+        transform: none;
+        width: 100%;
+    }
+
+    .blog-body:after {
+        display: none;
+    }
+
+    .form-floating > label {
+        font-size: 1rem;
+    }
+
+    .form--text {
+        font-size: 1rem;
+    }
+
+    .footer-logo {
+        max-width: 30%;
+        padding-bottom: 1rem;
+    }
+
+    footer.footer {
+        text-align: center;
+        font-size: 1rem;
     }
 }
 
@@ -28,12 +76,71 @@
         font-size: 12px;
     }
 
+    .side-link {
+        display: none;
+    }
+
     .nav-item {
         text-align: center;
     }
 
     .about {
         text-align: center;
+    }
+
+    .about-para p {
+        font-size: 1.1rem;
+    }
+
+    .custom-card-body .card-text {
+        font-size: 1rem;
+    }
+
+    .section-heading {
+        font-size: 2.5rem;
+        padding-bottom: 2rem;
+        text-align: center !important;
+    }
+
+    .skill-box {
+        padding: 0 2rem 2rem 2rem;
+    }
+
+    .skill-box p {
+        font-size: 1rem;
+    }
+
+    .blog {
+        text-align: center;
+    }
+
+    .blog-body {
+        position: static;
+        margin-top: 1rem;
+        transform: none;
+        width: 99%;
+    }
+
+    .blog-body:after {
+        display: none;
+    }
+
+    .form-floating > label {
+        font-size: 1rem;
+    }
+
+    .form--text {
+        font-size: 1rem;
+    }
+
+    .footer-logo {
+        max-width: 23%;
+        padding-bottom: 1rem;
+    }
+
+    footer.footer {
+        text-align: center;
+        font-size: 1rem;
     }
 }
 
@@ -70,6 +177,14 @@
         font-size: 1.1rem;
     }
 
+    .skill-box {
+        padding: 0 2rem 2rem 2rem;
+    }
+
+    .skill-box p {
+        font-size: 1rem;
+    }
+
     .services {
         padding: 5rem 0;
     }
@@ -81,6 +196,19 @@
     .section-heading {
         font-size: 2.5rem;
         padding-bottom: 2rem;
+        text-align: center !important;
+    }
+
+    .blog-body {
+        position: static;
+        padding: 1rem 1.5rem;
+        margin-top: 1rem;
+        transform: none;
+        width: 100%;
+    }
+
+    .blog-body:after {
+        display: none;
     }
 
     .card-title {
@@ -88,6 +216,24 @@
     }
 
     .card-text:last-child {
+        font-size: 1rem;
+    }
+
+    .form-floating > label {
+        font-size: 1rem;
+    }
+
+    .form--text {
+        font-size: 1rem;
+    }
+
+    .footer-logo {
+        max-width: 23%;
+        padding-bottom: 1rem;
+    }
+
+    footer.footer {
+        text-align: center;
         font-size: 1rem;
     }
 }
