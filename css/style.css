@@ -72,7 +72,7 @@ body {
 /* Welcome Section */
 
 .welcome {
-    background: #000 url(img/main-bg-2.jpg) center center no-repeat;
+    background: #000 url(../img/main-bg-2.jpg) center center no-repeat;
     background-attachment: scroll;
     background-size: cover;
     height: 85vh;
@@ -195,7 +195,7 @@ body {
 }
 
 .skill-box .progress {
-    height: 1.8rem;
+    height: 1.5rem;
     border-radius: 0;
 }
 
@@ -303,7 +303,7 @@ body {
 /* Contact Us section */
 
 .contact {
-    background: url(img/contactus.jpg) center center no-repeat;
+    background: url(../img/contactus.jpg) center center no-repeat;
     background-attachment: scroll;
     background-size: cover;
 }

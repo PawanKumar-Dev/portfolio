@@ -1,4 +1,33 @@
 /* Custom Media Query */
+@media (max-width: 990px) {
+
+    body {
+        font-size: 15px;
+    }
+
+    .jumbotron {
+        padding: 0;
+    }
+
+    .about {
+        background-color: transparent;
+        height: auto;
+        padding: 5rem 0;
+    }
+
+    .blog-body {
+        position: static;
+        padding: 1rem 1.5rem;
+        margin-top: 1rem;
+        transform: none;
+        width: 100%;
+    }
+
+    .blog-body:after {
+        display: none;
+    }
+}
+
 
 @media (max-width: 768px) {
 
@@ -9,6 +38,7 @@
     .nav-item {
         text-align: center;
     }
+
     .jumbotron {
         padding: 0;
     }
