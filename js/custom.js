@@ -1,3 +1,3 @@
-window.addEventListener('load', () => {
-    document.querySelector('.loader-container').style.display ="none";
+$('document').ready(function() {
+  setTimeout(function(){$('.preloader').fadeOut();}, 5000);
 });
