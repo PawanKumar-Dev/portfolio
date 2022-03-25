@@ -182,8 +182,12 @@ body {
     padding: 0;
 }
 
-.skill-padding {
+.skill-padding-1 {
     padding: 7rem 0 0 0;
+}
+
+.skill-padding-2 {
+    padding: 5rem 0 0 0;
 }
 
 .skill-box {
@@ -195,7 +199,7 @@ body {
 }
 
 .skill-box .progress {
-    height: 1.5rem;
+    height: 1.2rem;
     border-radius: 0;
 }
 
@@ -214,7 +218,7 @@ body {
 }
 
 .progress-bar-box h3 {
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 
