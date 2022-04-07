@@ -257,6 +257,10 @@
         font-size: 1rem;
     }
 
+    .outbound-link, .project-name {
+        font-size: 1rem; 
+    }
+
     .footer-logo {
         max-width: 23%;
         padding-bottom: 1rem;
